@@ -13,13 +13,12 @@ $path = rtrim($path, '/');
 
 // Route the request
 switch ($path) {
-    case '':
     case '/home':
         $framwork->loadController('HomeController');
         $controller = new HomeController();
-        $controller->index();
+        $controller->home();
         break;
-    case '/':
+    case '':
         $framwork->loadController('HomeController');
         $controller = new HomeController();
         $controller->index();

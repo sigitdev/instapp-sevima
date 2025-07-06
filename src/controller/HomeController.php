@@ -8,4 +8,8 @@ class HomeController extends Framework
     {
         $this->loadView('login');
     }
+
+    public function home(){
+        $this->loadView('home');
+    }
 }
