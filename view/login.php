@@ -9,9 +9,9 @@
         Insta App
     </div>
 
-    <a href="#" class="btn-register shadow">Create Account</a>
+    <a href="<?= $this->base_url('/register') ?>" class="btn-register shadow">Create Account</a>
     <div class="text-center m-3">Or</div>
-    <a href="<?= $this->base_url('/home') ?>" class="link-login">Already have account</a>
+    <a href="<?= $this->base_url('/login') ?>" class="link-login">Already have account</a>
 </div>
 
 <?php include 'layout/lib.php' ?>
